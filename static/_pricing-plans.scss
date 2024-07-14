@@ -1,0 +1,146 @@
+.pricing-plans{
+    padding-top: 150px;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/price-plan/bgicon.svg);
+        background-repeat: no-repeat;
+        height:100%;
+        width: 100%;
+        background-position: top;
+        top: 30px;
+        z-index: -1;
+        left: -60px;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/price-plan/pricing-bg-color.svg);
+        background-repeat: no-repeat;
+        height:100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        top: 0px;
+        z-index: -1;
+    }
+    .nav-tabs{
+        padding-top: 45px;
+        .nav-item{
+            margin: 0 -12px;
+        }
+        .nav-link{
+            background-color: $gray-200;
+            border-radius: $border-radius-xl;
+            line-height: normal;
+            padding: 15px 35px;
+            color: $gray-400;
+            &.active{
+                background-color: $primary;
+                color: $white;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+    .tab-content{
+        padding:120px 0 200px;
+        .float-icon{
+            right: 0;
+            bottom: 110px;
+        }
+        .card-body{
+            border-radius: 26px;
+            padding: 40px 35px 50px;
+            box-shadow: 30px 32px 140px rgba(50, 19, 21, 0.12);
+            .card{
+                display: flex;
+                align-items: stretch;
+                height: 100%;
+            }
+            &.row{
+                margin: 0 0px;
+            }
+            .col-xxl-3{
+                padding-left: 30px;
+                padding-right: 30px;
+                .price{
+                    line-height: 46px;
+                    small{
+                        color:$gray-400;
+                        font-size: 17px;
+                    }
+                    
+                }
+                
+            }
+            .card-details{
+                padding-top: 20px;
+                flex-wrap: wrap;
+                align-items: end;
+                flex: 1 1 auto;
+                h3{
+                    font-family: $font-family-pricing;
+                    letter-spacing: 0.02em;
+                    white-space: nowrap;
+                    text-overflow: clip;
+                }
+                i{
+                    background-color: $gray-500;
+                    color:$indigo;
+                    font-size:18px;
+                    padding: 3px;
+                }
+                p{
+                    color: $gray-400;
+                    padding-left: 12px;
+                    line-height: 20px;
+                }
+                ul{
+                    li{
+                        p{
+                            line-height:normal;
+                            margin-top:0;
+                        }
+                    }
+                }
+                
+            }
+            .pro-plan{
+                border-radius: 26px;
+                padding: 70px 30px 40px;
+                margin-top: -90px;
+                box-shadow:10px 35px 25px #fdded4;
+                .card-details{
+                    i{
+                        background-color: rgba(255,255,255,0.3);
+                    }
+                }
+                .card-action{
+                    position: relative;
+                    z-index: 1;
+                }
+                .badge{
+                    padding: 10px 20px;
+                    top:20px;
+                    right:20px;
+                    letter-spacing: 0.83px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background-image: url(../../assets/images/price-plan/proplan-bg.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 100%;
+                    background-position: right;
+                    width: 100%;
+                    top: 0;
+                    right: 0;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}

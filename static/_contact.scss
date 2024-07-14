@@ -1,0 +1,17 @@
+.contact{
+    background-color: $gray-700;
+    padding: 200px 0;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/contact/icon_contact.svg);
+        background-repeat: no-repeat;
+        height:100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        top: 0px;
+        z-index: -1;
+    }
+}

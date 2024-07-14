@@ -1,0 +1,26 @@
+.awasome-feature{
+    padding-bottom: 150px;
+    &::before{
+        position: absolute;
+        left: 0;
+        content: "";
+        background-image: url(../../assets/images/features/bgicon_awesome-feature.svg);
+        background-repeat: no-repeat;
+        height:100%;
+        width: 100%;
+        background-position: top;
+        background-size: contain;
+        top: 0px;
+        left: -50px;
+        z-index: -1;
+    }
+    .row{
+        padding-top: 150px;
+        .feature-card{
+            img{
+                height: 85px;
+                width: 85px;
+            }
+        }
+    }
+}

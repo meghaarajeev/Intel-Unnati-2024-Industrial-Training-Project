@@ -1,0 +1,105 @@
+.feature-of-design{
+    &::before{
+        position: absolute;
+        left: 0;
+        content: "";
+        background-image: url(../../assets/images/feature-of-design/icon_background.svg);
+        background-repeat: no-repeat;
+        height:100%;
+        width: 100%;
+        background-position: top;
+        top: 200px;
+        z-index: -1;
+    }
+    .img-bg-overlay{
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 90px;
+            content: "";
+            background: linear-gradient(180deg, #FF7342 0%, rgba(255, 115, 66, 0) 100%);
+            opacity: 0.5;
+            filter: blur(213px);
+            height: 75%;
+            width: 75%;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+    }
+    
+    h1{
+        color: $secondary;
+        line-height: 85px;
+        .highlight-hero-title{
+            background-color: $primary;
+            color:$secondary;
+            background: rgba(243, 92, 41, 0.22);
+            border: 4px dashed $primary;
+            padding: 0px 10px;
+            justify-content: center;
+            margin: 0 auto 5px;
+            // border: 5px dashed $secondary;
+            &:after{
+                position: absolute;
+                content: '';
+                height: 12px;
+                width: 12px;
+                background-color: $primary;
+                top: -8px;
+                right: -8px;
+                
+            }
+            &:before{
+                position: absolute;
+                content: '';
+                height: 12px;
+                width: 12px;
+                background-color: $primary;
+                top: -8px;
+                left: -8px;
+            }
+            .highlight-hero-title-inner{
+                &:before{
+                    position: absolute;
+                    content: '';
+                    height: 12px;
+                    width: 12px;
+                    background-color: $primary;
+                    bottom: -8px;
+                    left: -8px;
+                }
+                &:after{
+                    position: absolute;
+                    content: '';
+                    height: 12px;
+                    width: 12px;
+                    background-color: $primary;
+                    bottom: -8px;
+                    right: -8px;
+                }
+            }
+        }
+        .team{
+            right: -32%;
+            top: 60px;
+            text-align: center;
+            line-height: initial;
+            img{
+                height: 20px;
+                width: 20px;
+            }
+            .btn{
+                padding: 5px 20px;
+                font-size: 14px;
+                box-shadow: 0px 6px 12px rgb(0 0 0 / 16%);
+                border-radius: 6px;
+                margin-left: 25px;
+                margin-top: -7px;
+            }
+        }
+    }
+    p{
+        color:$gray-600;
+        font-family: $font-family-secondary;
+    }
+}
