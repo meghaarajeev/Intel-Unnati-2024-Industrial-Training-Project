@@ -1,0 +1,122 @@
+.btn{
+    padding: $btn-padding-y $btn-padding-x;
+    border-radius:$border-radius-sm;
+    font-weight: $btn-font-weight;
+    font-size:$btn-font-size;
+}
+.btn-hover-secondery{
+    &:hover{
+            background-color: $secondary;
+            color: $white;
+    }    
+}
+.btn-light{
+    padding: $btn-padding-y $btn-padding-x;
+    border-radius:24px;
+    background-color:$orange-light;
+    color: $primary;
+    font-weight: $btn-font-weight;
+    font-size:15px;
+}
+.btn-hover-light{
+    &:hover{
+            background-color: $primary;
+            color: $white;
+    }    
+}
+
+.white-btn{
+    padding: $btn-padding-y $btn-padding-x;
+    border-radius:8px;
+    background-color:$white;
+    color: $primary;
+    font-weight: $btn-font-weight;
+    font-size:15px;
+}
+.white-btn-hover{
+    &:hover{
+            background-color: $secondary;
+            color: $white;
+    }    
+}
+
+.btn-outline-primary{
+    color: $btn-link-color;
+    border: 1px solid $btn-link-color;
+}
+.btn-hover-outline-secondery{
+    &:hover{
+        background-color: $secondary;
+        color: $white;
+        border-color:$secondary;
+    } 
+}
+.section-heading{
+    color: $secondary;
+}
+.section-subheading{
+    color: $primary;
+}
+.fw-500{
+    font-weight: $font-weight-medium;
+}
+body, html {
+    overflow-x: hidden;
+}
+label{
+    color: $gray-900;
+    font-weight: $font-weight-medium;
+}
+
+.form-control{
+    padding: 15px 20px;
+    border-radius: $border-radius-sm;
+    color:$black;
+    font-size:16px;
+    font-weight: $font-weight-normal;
+    box-shadow: -1px 1px 6px #b0c8dd;
+    &::placeholder{
+        color:$gray-800;
+        font-size:16px;
+        font-weight: $font-weight-normal;
+    }
+    &:focus{
+            color: $black;
+            background-color: $white;
+            box-shadow: -1px 1px 6px #fdded4;
+    }
+}
+
+select{
+    &.form-control{
+    color:$gray-800;
+    font-size:16px;
+    font-weight: $font-weight-normal;
+    background: $white;
+    background-image: url(../../assets/images/contact/icon_caret_down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 50%;
+    background-size: 12px;
+    }
+}
+textarea.form-control{
+    min-height: 130px;
+}
+.form-group{
+    margin-bottom: 35px;
+}
+.section-bg-icons{
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/section-bg/team-feature-bg.svg);
+        background-repeat: no-repeat;
+        height:130%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        top: 0px;
+        z-index: -1;
+    }
+}

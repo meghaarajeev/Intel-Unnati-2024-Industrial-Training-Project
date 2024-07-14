@@ -1,0 +1,46 @@
+.main-header{
+    padding-top:55px;
+    transition: all 0.5s ease;
+    z-index: 99;
+    .navbar-collapse .navbar-nav .nav-item .nav-link{
+        font-size:$h6-font-size;
+        padding:0 18px;
+        font-family: $font-family-secondary;
+        color: $secondary;
+        font-weight:$font-weight-normal;
+        &:hover{
+            color: $primary;
+        }
+    }
+    &.sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        padding: 12px 0;
+        background: $white;
+        box-shadow: 0px 10px 30px rgb(0 71 55 / 10%);
+    }
+    .nav-toggler{
+        i{
+            font-size: 35px;
+        }
+    }
+    .offcanvas{
+        .offcanvas-header{
+            .btn-close{
+                margin-top: -25px;
+                margin-right: 0px;
+                i{font-size: 35px;color:$secondary;}
+            } 
+        }
+        .navbar-nav{
+            .nav-link{
+                color: $secondary;
+                font-weight:$font-weight-medium;
+                font-size: 20px;
+            }
+        }
+    }
+}

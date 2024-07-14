@@ -1,0 +1,225 @@
+/*******************/
+// Theme Fonts
+/********************/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+$font-family-sans-serif:'Red Hat Display', sans-serif;
+$font-family-secondary: 'DM Sans', sans-serif;
+$font-family-pricing: 'Yeseva One', cursive;
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #434343 !default;   
+$gray-200: #efefef !default;   //
+$gray-300: #8C8C8C !default;   //
+$gray-400: #848199 !default;  //   
+$gray-500: #edecf9 !default;  //  
+$gray-600: #8A8A8A !default;   //
+$gray-700: #f2f2f8 !default; //
+$gray-800: #7A8496 !default; //   
+$gray-900: #14141C !default;  // 
+$black:    #000 !default;
+$footer-link: #68657C !default;
+$scrollspy: #7593e8 !default;
+
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       #F35C29 !default; 
+$secondary:     #061434 !default; 
+$info:    #2776fc !default; 
+$light:    #DBE4F1 !default; 
+$warning:    #fece60 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "info": $info,
+  "light":    $light,
+  "warning":    $warning,
+) !default;
+// scss-docs-end theme-colors-map
+
+
+// Color system
+
+
+
+
+// scss-docs-start color-variables
+$blue:    #7871ED !default; //
+$indigo:  #5243C2 !default; //
+$purple:  #611F69 !default;
+$pink:    #d63384 !default;
+$red:     #DD3131 !default; //
+$orange:  #fd7e14 !default;
+$orange-light:  #feefea !default;
+$yellow:  #fece60 !default; //
+$green:   #6B9F36 !default;  //
+$teal:    #feefea !default;//
+$cyan:    #FDF0EA !default;
+// scss-docs-end color-variables
+
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1320px,
+) !default;
+// scss-docs-end container-max-widths
+
+
+
+
+/*******************/
+// Theme Text Contrast
+/********************/
+$min-contrast-ratio: 1.6 !default;
+//$enable-shadows: true !default;
+
+/*******************/
+// Theme body bg & text color
+/********************/
+$body-bg: #fff !default;
+$body-color: $gray-900 !default;
+$font-size-base: 1.125rem !default;
+
+// heading fonts setting
+$h1-font-size: 55px !default; //
+$h2-font-size: 52px !default;
+$h3-font-size: 35px !default;
+$h4-font-size: 28px !default;
+$h5-font-size: 22px !default;
+$h6-font-size: 20px !default;
+
+// Font size
+$font-sizes: (
+  1: 85px,
+  2: 55px,
+  3: 35px,
+  4: 25px,
+  5: 22px,
+  6: 20px,
+  7: 18px,
+  8: 15px,
+  9: 14px,
+  10: 12px,
+  11: 10px,
+);
+
+
+$display-font-sizes: (
+  1: 100px,
+  2: 90px,
+  3: 80px
+);
+
+/*custom*/
+$opacity-2:0.2;
+$section-gap:150px;
+$top-gutter:50px;
+/*******************/
+// Theme common variable
+/********************/
+
+
+
+// scss-docs-start border-radius-variables
+$border-radius:    5px !default;
+$border-radius-sm: 10px !default;
+$border-radius-lg: 20px !default;
+$border-radius-xl: 22px !default;
+// scss-docs-end border-radius-variables
+
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-semibold:        600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          900 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0 18px 62px rgba($black, 0.06) !default;
+$box-shadow-sm:               0 10px 18px rgba($gray-600, 0.1) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+// scss-docs-end box-shadow-variables
+
+
+/*******************/
+// Theme btn
+/********************/
+$btn-focus-width: 0px;
+$btn-box-shadow: 0 !default;
+$btn-focus-box-shadow: 0;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+// scss-docs-start btn-variables
+$btn-padding-y:               10px !default;
+$btn-padding-x:               30px !default;
+$btn-outline-padding-y:       15px !default;
+$btn-outline-padding-x:       20px !default;
+$btn-font-family:             $font-family-sans-serif !default;
+$btn-font-size:               20px !default;
+
+
+$btn-border-width:            0 !default;
+$btn-font-weight:             $font-weight-medium !default;
+$btn-link-color:              $primary !default;
+$btn-link-hover-color:        $blue !default;
+
+$btn-close-color:            $purple!default;
+$btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
+$btn-close-opacity:          1 !default;
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           $border-radius !default;
+
+// scss-docs-end btn-variables
+
+//offcanvas
+$zindex-offcanvas: 9999 !default;
+$offcanvas-horizontal-width:350px !default;
+
+
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+// scss-docs-start table-variables
+$table-cell-padding-y:        1.125rem !default;
+$table-cell-padding-x:        1.125rem !default;
+
+$table-cell-vertical-align:   top !default;
+
+$table-color:                 $gray-900 !default;
+$table-bg:                    $white !default;
+$table-accent-bg:             transparent !default;
+
+$table-th-font-weight:        $font-weight-medium !default;
+
+$table-striped-color:         $gray-900 !default;
+$table-striped-bg-factor:     .56 !default;
+$table-striped-bg:            rgba(237, 243, 249, $table-striped-bg-factor) !default;
+
+$table-border-factor:         .1 !default;
+$table-border-width:          0 !default;
+$table-border-color:          transparent !default;
+
+// scss-docs-end table-variables

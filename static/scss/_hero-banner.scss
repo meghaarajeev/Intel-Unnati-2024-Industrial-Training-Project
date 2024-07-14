@@ -1,0 +1,333 @@
+.hero-banner{
+    padding: 230px 0 150px 0px;
+    
+    &::before{
+        position: absolute;
+       content: "";
+       background: linear-gradient(90deg, #dcdaf9 0%, rgba(143, 180, 254, 0) 100%);
+       opacity: 1;
+       filter: blur(40px);
+       height: 100%;
+       width: 65%;
+       top: 0;
+       z-index: -1;
+       left: 0;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        background: linear-gradient(180deg, #FF7342 0%, rgba(255, 115, 66, 0) 100%);
+        opacity: 0.4;
+        filter: blur(180px);
+        height: 100%;
+        width: 35%;
+        top: 0;
+        z-index: -1;
+        right: 0;
+    }
+    .left-white-overlay{
+        &::after{
+            position: absolute;
+            top: 0;
+            content: "";
+            height: 800px;
+            width: 36%;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: rotate(35deg);
+            border-radius: 0;
+            z-index: -1;
+            left: -380px;
+        }
+    }
+    .right-white-overlay{
+        &::before{
+            position: absolute;
+            top: 0;
+            content: "";
+            height: 800px;
+            width: 500px;
+            background-color: rgba(255,255,255,0.5);
+            transform: rotate(25deg);
+            border-radius: 0;
+            z-index: 0;
+            right: -400px;
+        }
+    }
+    .left-icon{
+        img{
+            height: 380px;
+            top: 20%;
+            left: 0px;
+            -webkit-animation: topshap 5s infinite;
+            animation: topshap 5s infinite;
+            @keyframes topshap {
+                0% {
+                    top: 20%;
+                    left: -60px;
+                }
+
+                50% {
+                    top: 25%;
+                    left: -60px;
+                }
+
+                100% {
+                    top: 20%;
+                    left: -60px;
+                }
+            }
+        }
+    }
+    .right-icon{
+        img{
+            height: 380px;
+            top:15%;
+            right:-60px;
+            -webkit-animation: mobileshap 5s infinite;
+            animation: mobileshap 5s infinite;
+            @keyframes mobileshap {
+                0% {
+                    top: 15%;
+                }
+
+                50% {
+                    top: 25%;
+                }
+
+                100% {
+                    top: 15%;
+                }
+            }
+        }
+    }
+    .hero-bg-icons{
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url(../../assets/images/hero/iconbg_hero.svg);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            background-size: contain;
+            background-position: top;
+            top: 120px;
+            z-index: 0;       
+            left: 0px;
+            right:0;
+        }
+    }
+    .hero-title{
+        color: $secondary;
+        line-height: 85px;
+        .highlight-hero-title{
+            transform: rotate(-6.17deg);
+            background-color: $primary;
+            color:$white;
+            padding: 15px 0px;
+            width: 72%;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 5px;
+            border: 5px dashed $secondary;
+            &:after{
+                position: absolute;
+                content: '';
+                height: 20px;
+                width: 20px;
+                background-color: $secondary;
+                top: -12px;
+                right: -12px;
+                border-radius: 50%;
+            }
+            &:before{
+                position: absolute;
+                content: '';
+                height: 20px;
+                width: 20px;
+                background-color: $secondary;
+                top: -12px;
+                left: -12px;
+                border-radius: 50%;
+            }
+            .highlight-hero-title-inner{
+                &:before{
+                    position: absolute;
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    background-color: $secondary;
+                    bottom: -12px;
+                    left: -12px;
+                    border-radius: 50%;
+                }
+                &:after{
+                    position: absolute;
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    background-color: $secondary;
+                    bottom: -12px;
+                    right: -12px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .hero-subtitle{
+        color:$gray-100;
+        font-family: $font-family-secondary;
+        padding: 50px 0;
+        width: 75%;
+    }
+    .hero-action{
+        .btn{
+            font-family: $font-family-secondary;
+        }
+    }
+    .options{
+        padding: 50px 90px;
+        margin-top: 50px;
+        border-radius: $border-radius-sm;
+        .option-col{
+            padding:20px 20px;
+            border-radius: $border-radius-lg;
+            background: 
+                linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(to right, rgba(243, 92, 41, 0.5), rgba(120, 113, 237, 0.5)) border-box;
+            border:3px solid transparent;
+            transition: 0.5s;
+            .icon{
+                background-color: $light;
+                border-radius: 12px;
+                padding: 12px;
+                height: 60px;
+                width: 60px;
+            }
+            span{
+                color: $secondary;
+                font-size: 20px;
+            }
+            &:hover{
+                background: 
+                linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(to right, rgba(243, 92, 41, 1), rgba(120, 113, 237, 1)) border-box;
+            }
+        } 
+        .col-xxl-4{
+            padding-left: 20px;
+            padding-right: 20px;
+        }   
+        
+    }
+}
+
+.scrollspy-icon
+    {
+        padding: 100px 0 80px;
+        .pulse-animation {
+                @include media-breakpoint-down(lg) {
+                    top: 350px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    top: 250px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    top: 350px;
+                }
+            }
+
+            .pulse{
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background-image: url(../../assets/images/hero/scrollspy-line.svg);
+                    background-repeat: no-repeat;
+                    height: 180px;
+                    width: 100%;
+                    background-size: contain;
+                    background-position: center;
+                    top: 39%;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .pulse-animation2 {
+                position: absolute;
+                right: 18%;
+                top: -180px;
+            }
+
+            .pulse-animation3 {
+                position: absolute;
+                right: 18%;
+                top: -60px;
+            }
+
+            .pulse,
+            .pulse2,
+            .pulse3 {
+                position: relative;
+                background-color: $scrollspy;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+            }
+
+            .pulse2 {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            .pulse3 {
+                width: 150px;
+                height: 150px;
+                background-color: rgba($color: $info, $alpha: 0.15);
+            }
+
+            .ring,
+            .ring2,
+            .ring3 {
+                position: absolute;
+                background-color: $scrollspy;
+                width: 100%;
+                height: 100%;
+                border-radius: 100%;
+                opacity: 0.8;
+                animation: pulsing 4s ease-out infinite;
+            }
+
+            .ring3 {
+                background: rgba($color: $info, $alpha: 0.25);
+            }
+
+            .ring:nth-of-type(1),
+            .ring2:nth-of-type(1),
+            .ring3:nth-of-type(1) {
+                animation-delay: -1s;
+            }
+
+            .ring:nth-of-type(2),
+            .ring2:nth-of-type(2),
+            .ring3:nth-of-type(2) {
+                animation-delay: -2s;
+            }
+
+            .ring:nth-of-type(3),
+            .ring2:nth-of-type(3),
+            .ring3:nth-of-type(3) {
+                animation-delay: -3s;
+            }
+
+            @keyframes pulsing {
+                100% {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+    }
